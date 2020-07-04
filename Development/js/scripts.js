@@ -7,11 +7,28 @@
  * - name إن استقبلت اسم أو "Hello <name>" تطبع
  */
 
-function greet(name) {}
+greet("Aziz");
+
+function greet(name) {
+  if (name) {
+    console.log("Hello " + name);
+  } else {
+    console.log("Hello");
+  }
+}
 
 /*
  * isOdd(n) اسم الدالة
  * - n تستقبل رقم
  * - عدا ذلك false إن كان الرقم فردياً وترجع true ترجع القيمة
  */
-function isOdd(n) {}
+
+console.log(isOdd(4));
+
+function isOdd(n) {
+  if (n % 2 == 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
